@@ -1,0 +1,129 @@
+/*Banner Section*/
+
+
+.banner-section {
+    min-height: 100vh;
+    position: relative;
+    .banner-left-shap {
+        position: absolute;
+        top: 330px;
+        left: 25px;
+    }
+    .banner-middle-shap {
+        position: absolute;
+        bottom: -80px;
+        left: 660px;
+
+        animation-name: spin;
+        animation-duration: 15000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        @keyframes spin {
+            from {
+              transform: rotate(0deg);
+            }
+            to {
+              transform: rotate(360deg);
+            }
+          }
+    }
+    .banner-left-img1 {
+        position: absolute;
+        left: -150px;
+        bottom: -180px;
+    }
+    .banner-left-img2 {
+        position: absolute;
+        left: -140px;
+        bottom: -190px;
+    }
+    .banner-font-img {
+        position: absolute;
+        top: -10px;
+        right: -255px;
+        z-index: 1;
+        width: auto;
+        height: 100%;
+    }
+    .banner-back-img {
+        position: absolute;
+        top: -10px;
+        right: -255px;
+        width: auto;
+        height: 100%;
+    }
+    .banner-content {
+        margin-top: 280px;
+        max-width: 460px;
+        h1.banner-title {
+            font-size: 70px;
+            line-height: 1.071;
+            padding: 15px 0px 25px;
+            color: $title-color;
+        }
+        p.banner-text {
+            font-size: 22px;
+            color: #403b64;
+            font-family: roboto;
+            line-height: 1.667;
+        }
+        .banner-btn {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: 65px;
+            .play-btn {
+                width: 70px;
+                height: 70px;
+                line-height: 70px;
+                margin-right: 20px;
+                background-color: #5409d6;
+                border-radius: 100%;
+                transition: all .3s ease-in-out;
+                i.fas.fa-play {
+                    color: #fff;
+                }
+                &:hover {
+                    background-color: #FF6700;
+                }
+            }
+            .btn-orange {
+                color: #fff;
+                height: 70px;
+                width: 230px;
+                font-weight: 700;
+                line-height: 70px;
+                border: none;
+                border-radius: 40px;
+                font-family: "Poppins";
+                background-color: #ff6700;
+                transition: all 1s ease;
+                position: relative;
+                overflow: hidden;
+                z-index: 1;
+                &::after {
+                    content: " ";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: #5409d6;
+                    border-radius: 40px;
+                    left: 0;
+                    bottom: -100%;
+                    z-index: -1;
+                    transition: all .4s ease-in;
+                }
+                &:hover{
+                    &::after {
+                        bottom: 0;
+                    }
+                }
+            }
+            a{
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+    
+}

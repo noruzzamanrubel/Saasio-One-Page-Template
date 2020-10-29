@@ -1,0 +1,104 @@
+.portfolio-slider {
+    margin: 45px 0px 20px;
+    position: relative;
+    .portfolio-item {
+        text-align: center;
+        &:hover {
+            transition: all .4s ease-in-out;
+            .portfolio-img::after {
+                opacity: .8;
+                transform: rotateX(0deg) scale(1, 1);
+            }
+                h3::before {
+                    position: absolute;
+                    content: " ";
+                    left: 0;
+                    right: 0;
+                    bottom: 8px;
+                    height: 2px;
+                    background-color: #282350;
+                    transition: all .4s ease-in-out;
+
+                }
+        }
+        .portfolio-img {
+            position: relative;
+
+            &::after {
+                position: absolute;
+                content: " ";
+                top: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #000;
+                opacity: 0;
+                transition: all 700ms ease-out 0s;
+                transform: rotateX(180deg) scale(.5,.5);
+            }
+        }
+        .portfolio-text {
+
+            margin-top: 18px;
+            padding-bottom: 28px;
+
+            h3 {
+                font-size: 24px;
+                display: inline-block;
+                padding-bottom: 12px;
+                position: relative;
+
+            }
+            span {
+                display: block;
+                color: #585476;
+                font-weight: 700;
+                font-size: 16px;
+            }
+        }
+    }
+    .fas.fa-angle-left {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        border-radius: 50%;
+        position: absolute;
+        top: 160px;
+        left: 15px;
+        background-color: #fff;
+        transform: scale(0);
+        background-image: linear-gradient(-81deg, #6806d9 0%, #4f0ad6 57%, #360ed2 100%);
+        transition: all .5s ease-in-out;
+        &:hover {
+            transform: scale(1);
+        }
+
+    }
+    .fas.fa-angle-right {
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        border-radius: 50%;
+        position: absolute;
+        top: 160px;
+        right: 15px;
+        background-color: #fff;
+        &:hover {
+            background-image: linear-gradient(-81deg, #6806d9 0%, #4f0ad6 57%, #360ed2 100%);
+            transition: all .5s ease-in-out;
+        }
+
+    }
+}
+.portfolio-btn {
+    display: block;
+    .btn {
+        height: 58px;
+        width: 200px;
+        line-height: 48px;
+        background-color: #ff6700;
+        &::after {
+            background-color: #390ed2;
+        }
+    }
+}

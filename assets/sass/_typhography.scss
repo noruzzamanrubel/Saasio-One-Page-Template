@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Roboto:100,500,300,400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.667;
+    font-family: "Roboto";
+    overflow-x: hidden;
+    color: #585476;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h1, h2,h3,h4,h5,h6 {
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #282350;
+}
+
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.375;
+    padding-top: 5px;
+    text-transform: capitalize;
+}
+
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 700;
+    background-image: linear-gradient(81deg, #ff6600 0%, #ff9903 75%, #ffcb05 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

@@ -1,0 +1,79 @@
+/*Service Section*/
+
+.service-section {
+    margin-top: 300px;
+    margin-bottom: 150px;
+    
+    .service-title {
+        .sub-title {
+
+        }
+    }
+    .service-item {
+        margin: 35px 0px 5px;
+
+        .single-service-item {
+            width: 315px;
+            h3{
+                color: $title-color;
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 16px;
+            }
+            ul{
+                li{
+                    padding-left: 15px;
+                    position: relative;
+                    padding-bottom: 5px;
+                    &::before{
+                        content: "+";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    a{
+                        color: #585476;
+                        text-decoration: none;
+                    }
+                }
+            }
+    
+        }
+    }
+    .btn {
+        margin-top: 10px;
+
+        a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 700;
+            text-decoration: none;
+            font-family: "Poppins";
+        }
+    }
+    .service-bottom {
+        justify-content: space-between;
+        .service-review {
+            .service-review-icon {
+                ul{
+                    li{
+                        display: inline-block;
+                        i{
+                            color: #f7c903;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .service-review-text {
+                font-size: 14px;
+                max-width: 215px;
+                span{
+                    color: #282350;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+
+}
