@@ -66,11 +66,9 @@
         top: 160px;
         left: 15px;
         background-color: #fff;
-        transform: scale(0);
-        background-image: linear-gradient(-81deg, #6806d9 0%, #4f0ad6 57%, #360ed2 100%);
-        transition: all .5s ease-in-out;
         &:hover {
-            transform: scale(1);
+            background-image: linear-gradient(-81deg, #6806d9 0%, #4f0ad6 57%, #360ed2 100%);
+            transition: all .5s ease-in-out;
         }
 
     }

@@ -27,7 +27,7 @@ $(document).ready(function () {
 
 
 $(document).ready(function () {
-    $('.owl-carousel').owlCarousel({
+    $('.portfolio-carousel').owlCarousel({
         loop:true,
         margin:20,
         dots: false,
@@ -52,4 +52,37 @@ $(document).ready(function () {
 });
 
 
+
+
+
+$(document).ready(function () {
+    $('.team-carousel').owlCarousel({
+        margin:20,
+        dots: false,
+        nav: true,
+        loop:true,
+        center:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            768:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+});
+
+
+$(document).ready(function(){
+    
+    $('.carousel').carousel()
+
+});
 
