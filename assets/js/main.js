@@ -57,20 +57,13 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.team-carousel').owlCarousel({
-        margin:20,
-        dots: false,
-        nav: true,
         loop:true,
-        center:true,
         responsive:{
             0:{
                 items:1
             },
             600:{
-                items:2
-            },
-            768:{
-                items:2
+                items:1
             },
             1000:{
                 items:3
@@ -82,7 +75,20 @@ $(document).ready(function () {
 
 $(document).ready(function(){
     
-    $('.carousel').carousel()
+    $('.carousel').carousel({
+        interval: 2000
+    })
+
+    $('.carousel').on('slid.bs.carousel', function() {
+        $(".carousel-indicators2 li").removeClass("active");
+        indicators = $(".carousel-indicators li.active").data("slide-to");
+        a = $(".carousel-indicators2").find("[data-slide-to='" + indicators + "']").addClass("active");
+        console.log(indicators);
+      
+      })
+
 
 });
+
+
 
