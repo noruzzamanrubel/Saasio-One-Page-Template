@@ -1,0 +1,59 @@
+.footer-widget-section {
+    padding-top: 140px;
+    position: relative;
+    .footer-bg {
+        position: absolute;
+        top: calc(50% - 90px);
+        left: calc(50% - 333px);
+    }
+
+    .footer-widget-item {
+        .footer-logo {
+            margin-bottom: 18px;
+        }
+        p {
+            line-height: 1.875;
+            max-width: 220px;
+        }
+        .footer-payment-logo {
+            margin-top: 30px;
+        }
+        .footer-widget-title {
+            h4 {
+                color: #05071f;
+                font-size: 16px;
+                margin-bottom: 15px;
+                padding-left: 15px;
+            }
+        }
+        ul {
+            li {
+                width: 50%;
+                float: left;
+                font-size: 14px;
+                padding-left: 15px;
+                margin-bottom: 15px;
+                font-family: "Poppins";
+                a {
+                    color: #05071f;
+                    font-weight: 500;
+                    transition: all .3s ease-in-out;
+                                    
+                    i {
+                        font-weight: 900;
+                        font-size: 12px;
+                        margin-right: 10px;
+                        color: #05071f;
+                    }
+                    &:hover {
+                        color: #0072fd;
+                        margin-left: 10px;
+                        i:hover{
+                            color: #0072fd;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

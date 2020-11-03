@@ -1,0 +1,72 @@
+.newslatter-section {
+    background-color: #f6ebe6;
+    padding: 65px 0px 80px;
+    position: relative;
+    overflow: hidden;
+    .newslatter-bg1 {
+        position: absolute;
+        top: 0;
+        left: 40px;
+    }
+    .newslatter-bg2 {
+        position: absolute;
+        top: 10px;
+        left: 190px;
+    }
+    .newslatter-bg3 {
+        position: absolute;
+        top: 45px;
+        right: 180px;
+    }
+    .newslatter-bg4 {
+        position: absolute;
+        bottom: 0px;
+        left: 45px;
+    }
+    .newslatter-bg5 {
+        position: absolute;
+        bottom: -80px;
+        right: 80px;
+    }
+
+    .newslatter-content {
+        background-color: #fff;
+        border-radius: 30px;
+        padding: 55px 55px 65px 75px;
+    }
+    .newslatter-text {
+        h3 {
+            font-size: 30px;
+            padding-bottom: 12px;
+        }
+        p {
+            font-size: 17px;
+        }
+    }
+    .newslatter-form {
+        .form-inline {
+        }
+        input[type="email"] {
+            padding: 12px;
+            background-color: #ebeff3;
+            border: none;
+            border-radius: 5px;
+            padding-left: 20px;
+            margin-right: 15px;
+            display: inline-block;
+            width: 100%;
+            max-width: 330px;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .newslatter-checkbox {
+        font-size: 14px;
+        margin-top: 15px;
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+    }
+}
