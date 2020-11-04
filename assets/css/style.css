@@ -979,9 +979,14 @@ ul.navbar-nav {
     color: #373a5b;
     margin-left: 35px; }
 
+@media (max-width: 991px) {
+  .footer-widget-section .footer-bg {
+    top: calc(30% - 140px);
+    left: calc(50% - 240px); }
+  .footer-widget-section .footer-widget-item .footer-widget-title {
+    margin-top: 40px; } }
 @media (max-width: 768px) {
   .footer-widget-section .footer-bg {
-    position: absolute;
     top: calc(32% - 90px);
     left: calc(100% - 375px); }
   .footer-widget-section .footer-widget-item .footer-widget-title {
