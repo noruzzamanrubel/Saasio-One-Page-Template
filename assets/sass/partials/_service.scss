@@ -105,9 +105,20 @@
             text-align: center;
         }
         .service-title {
-            text-align: center;
             h2 {
                 font-size: 28px;
+            }
+        }
+        .service-item {
+            flex-direction: column !important;
+        }
+        .service-bottom {
+            flex-direction: column !important;
+            .btn {
+                margin-bottom: 15px;
+                height: 50px;
+                width: 200px;
+                line-height: 40px;
             }
         }
     }

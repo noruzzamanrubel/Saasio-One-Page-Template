@@ -39,3 +39,24 @@ ul {
     }
 }
 
+@media (max-width: 768px){
+    .navbar {
+        .navbar-brand {
+            margin-left: 0;
+        }
+        button {
+            &:focus {
+                outline: none;
+            }
+            span {
+                i {
+                    font-size: 30px;
+                    color: #ff8833;
+                }
+            }
+        }
+        &.active {
+            padding: 8px 16px;
+        }
+    }
+}
