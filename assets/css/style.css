@@ -623,24 +623,27 @@ ul.navbar-nav {
     .banner-section .banner-btn {
       justify-content: center; } }
 @media (max-width: 768px) {
-  .banner-section .banner-middle-shap {
-    bottom: 90px;
-    left: 270px; }
-  .banner-section .banner-content h1 {
-    font-size: 40px !important; }
-  .banner-section .banner-content p {
-    font-size: 20px !important; }
-  .banner-section .banner-content .banner-btn {
-    margin-top: 40px; }
-    .banner-section .banner-content .banner-btn .btn-orange {
-      width: 200px;
-      height: 50px;
-      line-height: 50px; }
-    .banner-section .banner-content .banner-btn .play-btn {
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      margin-right: 10px; } }
+  .banner-section {
+    min-height: 100% !important;
+    margin-bottom: 50px; }
+    .banner-section .banner-middle-shap {
+      bottom: 365px;
+      left: 160px; }
+    .banner-section .banner-content h1 {
+      font-size: 40px !important; }
+    .banner-section .banner-content p {
+      font-size: 20px !important; }
+    .banner-section .banner-content .banner-btn {
+      margin-top: 40px; }
+      .banner-section .banner-content .banner-btn .btn-orange {
+        width: 200px;
+        height: 50px;
+        line-height: 50px; }
+      .banner-section .banner-content .banner-btn .play-btn {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        margin-right: 10px; } }
 /*Service Section*/
 .service-section {
   margin-top: 300px;
@@ -886,9 +889,9 @@ ul.navbar-nav {
   .blog-section .blog-text h3 a {
     font-size: 20px !important; }
   .blog-section .blog-meta span {
-    font-size: 15px !important; }
+    font-size: 17px !important; }
   .blog-section .blog-meta .date-meta a {
-    font-size: 15px !important; } }
+    font-size: 17px !important; } }
 .footer-widget-section {
   padding-top: 140px;
   position: relative; }
@@ -976,6 +979,13 @@ ul.navbar-nav {
     color: #373a5b;
     margin-left: 35px; }
 
+@media (max-width: 768px) {
+  .footer-widget-section .footer-bg {
+    position: absolute;
+    top: calc(32% - 90px);
+    left: calc(100% - 375px); }
+  .footer-widget-section .footer-widget-item .footer-widget-title {
+    margin-top: 40px; } }
 .count-section {
   padding-bottom: 70px; }
   .count-section h2 {

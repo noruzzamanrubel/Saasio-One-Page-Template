@@ -130,3 +130,20 @@
     }
 
 }
+
+@media (max-width: 768px){
+
+    .footer-widget-section {
+        .footer-bg {
+            position: absolute;
+            top: calc(32% - 90px);
+            left: calc(100% - 375px);
+        }
+        .footer-widget-item {
+            .footer-widget-title {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+

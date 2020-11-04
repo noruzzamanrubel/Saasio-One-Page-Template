@@ -161,9 +161,11 @@
 
 @media (max-width: 768px) {
     .banner-section {
+        min-height: 100% !important;
+        margin-bottom: 50px;
         .banner-middle-shap {
-            bottom: 90px ;
-            left: 270px ;
+            bottom: 365px ;
+            left: 160px ;
         }
         .banner-content {
             h1 {
