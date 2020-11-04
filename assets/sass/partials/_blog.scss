@@ -3,7 +3,9 @@
     .blog-item {
         padding-top: 36px;
         .blog-img {
-
+            img {
+                width: 100%;
+            }
         }
         .blog-text {
             margin-top: 25px;
@@ -50,6 +52,39 @@
                 a {
                     font-size: 18px;
                     color: #585476;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .blog-section {
+        h2 {
+            font-size: 36px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-section {
+        h2 {
+            font-size: 28px;
+        }
+        .blog-text {
+            h3 {
+                a {
+                    font-size: 20px !important;
+                }
+            }
+        }
+        .blog-meta {
+            span {
+                font-size: 15px !important;
+            }
+            .date-meta {
+                a {
+                    font-size: 15px !important;
                 }
             }
         }

@@ -133,3 +133,86 @@
         }
     }
 }
+
+@media (max-width: 991px){
+    .testimonial-section {
+        .testimonial-bg, .testimonial-shape1, .testimonial-shape2 {
+            display: none;
+        }
+        h2 {
+            font-size: 36px;
+        }
+        .testimonial-slider {
+            .carousel-indicators {
+                display: none !important;
+            }
+            .carousel-content {
+                .testimonial-items {
+                    padding: 60px 70px 50px;
+                }
+            }
+            .testimonial-dot-indicator {
+                ol{
+                    &.carousel-indicators2 {
+                        position: absolute;
+                        left: 260px;
+                        bottom: 0;
+                        li {
+                            background-color: #5409d6;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .testimonial-section {
+        padding: 80px 0 75px;
+        .testimonial-bg, .testimonial-shape1, .testimonial-shape2 {
+            display: none;
+        }
+        h2 {
+            font-size: 28px;
+        }
+        .testimonial-slider {
+            margin-top: 20px;
+            .carousel-indicators {
+                display: none !important;
+            }
+            .carousel-content {
+                .testimonial-items {
+                    padding: 20px 30px 80px !important;
+                    .testimonial-meta {
+                        h3 {
+                            font-size: 26px !important;
+                        }
+                    }
+                }
+                .testimonial-text {
+                    p {
+                        font-size: 18px !important;
+                    }
+                }
+            }
+            .testimonial-dot-indicator {
+                ol{
+                    &.carousel-indicators2 {
+                        position: absolute;
+                        left: 90px;
+                        bottom: 0;
+                        li {
+                            background-color: #5409d6;
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

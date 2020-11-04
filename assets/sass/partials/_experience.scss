@@ -67,3 +67,42 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .experience-section {
+        padding-top: 80px;
+        padding-bottom: 65px;
+        .experience-img {
+            text-align: center;
+        }
+        .experience-title {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .experience-section {
+        padding-top: 70px;
+        padding-bottom: 50px;
+        .experience-img {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .experience-title {
+            h2 {
+                font-size: 28px;
+            }
+            p {
+                margin-top: 10px;
+            }
+        }
+        .experence-btn {
+            margin-top: 40px !important;
+        }
+    }
+}

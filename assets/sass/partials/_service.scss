@@ -77,3 +77,38 @@
     }
 
 }
+
+
+@media (max-width: 991px) {
+    .service-section {
+        margin-top: 100px;
+        margin-bottom: 80px;
+        .service-img {
+            margin-top: 0;
+        }
+        .service-title {
+            h2 {
+                font-size: 36px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .service-section {
+        margin-top: 0;
+        margin-bottom: 80px;
+        .service-img {
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .service-title {
+            text-align: center;
+            h2 {
+                font-size: 28px;
+            }
+        }
+    }
+}

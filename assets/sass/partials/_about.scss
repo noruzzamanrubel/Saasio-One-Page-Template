@@ -45,3 +45,49 @@
         }
     }
 }
+
+@media (max-width: 991px) {
+    .about-section {
+        .about-title {
+            h2 {
+                font-size: 36px;
+            }
+            p {
+                padding: 10px 0px 20px;
+            }
+        }
+
+        .about-img {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 0px;
+        .about-title {
+            h2 {
+                font-size: 28px;
+            }
+            p {
+               padding: 10px 0px 20px;
+            }
+        }
+        .about-list {
+            ul {
+                li {
+                    width: 100%;
+                    float: none;
+                }
+            }
+        }
+        .about-img {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+    }
+}
