@@ -725,7 +725,8 @@ ul.navbar-nav {
     .service-section .service-img {
       margin-top: 0;
       margin-bottom: 20px;
-      text-align: center; }
+      text-align: center;
+      overflow: hidden; }
     .service-section .service-title h2 {
       font-size: 28px; }
     .service-section .service-item {
