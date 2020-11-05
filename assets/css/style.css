@@ -460,7 +460,11 @@ h2 {
       background-color: #ebeff3; }
   .newslatter-section .newslatter-form .form-row .checkbox {
     font-size: 14px;
-    margin-top: 15px; }
+    margin-top: 15px;
+    display: flex; }
+    .newslatter-section .newslatter-form .form-row .checkbox input[type=checkbox], .newslatter-section .newslatter-form .form-row .checkbox input[type=radio] {
+      margin-right: 10px;
+      margin-top: 5px; }
 
 @media (max-width: 768px) {
   .newslatter-section .newslatter-content {
