@@ -116,6 +116,7 @@
         font-size: 14px;
         font-weight: 500;
         font-family: "Poppins";
+        
     }
     .copyright-text {
         p {
@@ -155,6 +156,18 @@
         .footer-widget-item {
             .footer-widget-title {
                 margin-top: 40px;
+            }
+        }
+    }
+    .footer-section {
+        .footer-copyright {
+            .copyright-text {
+                text-align: center !important;
+                margin-bottom: 10px;
+            }
+            .copyright-menu {
+                text-align: center !important;
+                margin-bottom: 10px;
             }
         }
     }
