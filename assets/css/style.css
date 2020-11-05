@@ -1003,7 +1003,9 @@ ul.navbar-nav {
     top: calc(30% - 140px);
     left: calc(50% - 240px); }
   .footer-widget-section .footer-widget-item .footer-widget-title {
-    margin-top: 40px; } }
+    margin-top: 40px; }
+  .footer-widget-section .footer-widget-item .footer-app-img img {
+    margin-top: 0px; } }
 @media (max-width: 768px) {
   .footer-widget-section .footer-bg {
     top: calc(32% - 90px);
