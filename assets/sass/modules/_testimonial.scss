@@ -62,16 +62,14 @@
             }
         .carousel-content {
             position: relative;
-            &::after {
-                position: absolute;
-                content: '\f10e';
-                font-family: "Font Awesome 5 Free" ;
-                font-size: 60px;
-                color: rgba(203, 203, 226, 0.75);
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
+            .carousel-quote {
+                i {
+                    position: absolute;
+                    font-size: 60px;
+                    color: rgba(203, 203, 226, 0.75);
+                    top: -30px;
+                    left: 30px;
+                }
             }
             .carousel-inner {
                 .carousel-item {
@@ -195,6 +193,12 @@
                 display: none !important;
             }
             .carousel-content {
+                .carousel-quote {
+                    i {
+                        font-size: 30px;
+                        top: -20px;
+                    }
+                }
                 .testimonial-items {
                     padding: 20px 30px 80px !important;
                     .testimonial-meta {
@@ -213,7 +217,7 @@
                 ol{
                     &.carousel-indicators2 {
                         position: absolute;
-                        left: 90px;
+                        left: calc(50% - 68px);
                         bottom: 0;
                         li {
                             background-color: #5409d6;
