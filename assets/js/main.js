@@ -87,17 +87,9 @@ $(document).ready(function(){
       
       })
 
-
-});
-
-
-$(function () {
-    var anchorScroll = $(document).AnchorScroll({
+      var anchorScroll = $(document).AnchorScroll({
         center: 1,
-        speed: 5000,
-        offset: 20,
-        easing:"linear",
-        target:'a[href^="#"]'
+        speed: 1000,
+        offset: -115,
     });
-  });
-
+});

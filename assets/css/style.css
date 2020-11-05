@@ -439,25 +439,17 @@ h2 {
     padding-bottom: 12px; }
   .newslatter-section .newslatter-text p {
     font-size: 17px; }
-  .newslatter-section .newslatter-form .form-inline {
-    width: 100%;
-    display: inline-block; }
-  .newslatter-section .newslatter-form input[type="email"] {
-    padding: 12px;
+  .newslatter-section .newslatter-form .form-row .form-control {
+    padding: 25px 20px;
     background-color: #ebeff3;
-    border: none;
-    border-radius: 5px;
-    padding-left: 20px;
-    margin-right: 15px;
-    display: inline-block;
-    width: 100%; }
-    .newslatter-section .newslatter-form input[type="email"]:focus {
-      outline: none; }
-  .newslatter-section .newslatter-checkbox {
+    border: none; }
+    .newslatter-section .newslatter-form .form-row .form-control:focus {
+      border: none;
+      box-shadow: none;
+      background-color: #ebeff3; }
+  .newslatter-section .newslatter-form .form-row .checkbox {
     font-size: 14px;
     margin-top: 15px; }
-    .newslatter-section .newslatter-checkbox input[type="checkbox"] {
-      margin-right: 5px; }
 
 @media (max-width: 768px) {
   .newslatter-section .newslatter-content {
@@ -482,7 +474,7 @@ h2 {
 ul.navbar-nav {
   margin-left: auto;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 15px 40px; }
+  padding: 15px 50px; }
   ul.navbar-nav li.nav-item {
     margin: 0px 30px; }
   ul.navbar-nav a.nav-link {
@@ -491,6 +483,16 @@ ul.navbar-nav {
     padding: 7px 0px;
     font-family: 'Poppins'; }
 
+@media (max-width: 991px) {
+  .navbar .navbar-brand {
+    margin-left: 0; }
+  .navbar button:focus {
+    outline: none; }
+  .navbar button span i {
+    font-size: 30px;
+    color: #ff8833; }
+  .navbar.active {
+    padding: 8px 16px; } }
 @media (max-width: 768px) {
   .navbar .navbar-brand {
     margin-left: 0; }
@@ -613,8 +615,8 @@ ul.navbar-nav {
       left: 20px;
       top: 160px; }
     .banner-section .banner-middle-shap {
-      bottom: 0;
-      left: 500px; }
+      bottom: calc(50% - 200px);
+      left: calc(50% - 50px); }
     .banner-section .container {
       max-width: 100%; }
       .banner-section .container .banner-content {
@@ -627,8 +629,8 @@ ul.navbar-nav {
     min-height: 100% !important;
     margin-bottom: 50px; }
     .banner-section .banner-middle-shap {
-      bottom: 365px;
-      left: 160px; }
+      bottom: calc(50% - 170px);
+      left: calc(50% - 50px); }
     .banner-section .banner-content h1 {
       font-size: 40px !important; }
     .banner-section .banner-content p {
@@ -648,48 +650,50 @@ ul.navbar-nav {
 .service-section {
   margin-top: 300px;
   margin-bottom: 150px; }
-  .service-section .service-item {
-    margin: 35px 0px 5px; }
-    .service-section .service-item .single-service-item {
-      width: 315px; }
-      .service-section .service-item .single-service-item h3 {
-        color: #282350;
-        font-size: 20px;
+  .service-section .service-content {
+    margin-left: 60px; }
+    .service-section .service-content .service-item {
+      margin: 35px 0px 5px; }
+      .service-section .service-content .service-item .single-service-item {
+        width: 315px; }
+        .service-section .service-content .service-item .single-service-item h3 {
+          color: #282350;
+          font-size: 20px;
+          font-weight: 700;
+          padding-bottom: 16px; }
+        .service-section .service-content .service-item .single-service-item ul li {
+          padding-left: 15px;
+          position: relative;
+          padding-bottom: 5px; }
+          .service-section .service-content .service-item .single-service-item ul li::before {
+            content: "+";
+            position: absolute;
+            top: 0;
+            left: 0; }
+          .service-section .service-content .service-item .single-service-item ul li a {
+            color: #585476;
+            text-decoration: none; }
+    .service-section .service-content .btn {
+      margin-top: 10px; }
+      .service-section .service-content .btn a {
+        color: #fff;
+        font-size: 15px;
         font-weight: 700;
-        padding-bottom: 16px; }
-      .service-section .service-item .single-service-item ul li {
-        padding-left: 15px;
-        position: relative;
-        padding-bottom: 5px; }
-        .service-section .service-item .single-service-item ul li::before {
-          content: "+";
-          position: absolute;
-          top: 0;
-          left: 0; }
-        .service-section .service-item .single-service-item ul li a {
-          color: #585476;
-          text-decoration: none; }
-  .service-section .btn {
-    margin-top: 10px; }
-    .service-section .btn a {
-      color: #fff;
-      font-size: 15px;
-      font-weight: 700;
-      text-decoration: none;
-      font-family: "Poppins"; }
-  .service-section .service-bottom {
-    justify-content: space-between; }
-    .service-section .service-bottom .service-review .service-review-icon ul li {
-      display: inline-block; }
-      .service-section .service-bottom .service-review .service-review-icon ul li i {
-        color: #f7c903;
-        font-size: 14px; }
-    .service-section .service-bottom .service-review .service-review-text {
-      font-size: 14px;
-      max-width: 215px; }
-      .service-section .service-bottom .service-review .service-review-text span {
-        color: #282350;
-        font-weight: 700; }
+        text-decoration: none;
+        font-family: "Poppins"; }
+    .service-section .service-content .service-bottom {
+      justify-content: space-between; }
+      .service-section .service-content .service-bottom .service-review .service-review-icon ul li {
+        display: inline-block; }
+        .service-section .service-content .service-bottom .service-review .service-review-icon ul li i {
+          color: #f7c903;
+          font-size: 14px; }
+      .service-section .service-content .service-bottom .service-review .service-review-text {
+        font-size: 14px;
+        max-width: 215px; }
+        .service-section .service-content .service-bottom .service-review .service-review-text span {
+          color: #282350;
+          font-weight: 700; }
 
 @media (max-width: 991px) {
   .service-section {

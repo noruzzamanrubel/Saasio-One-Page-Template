@@ -46,30 +46,21 @@
         }
     }
     .newslatter-form {
-        .form-inline {
-            width: 100%;
-            display: inline-block;
-        }
-        input[type="email"] {
-            padding: 12px;
-            background-color: #ebeff3;
-            border: none;
-            border-radius: 5px;
-            padding-left: 20px;
-            margin-right: 15px;
-            display: inline-block;
-            width: 100%;
-            &:focus {
-                outline: none;
+        .form-row {
+            .form-control {
+                padding: 25px 20px;
+                background-color: #ebeff3;
+                border: none;
+                &:focus {
+                    border: none;
+                    box-shadow: none;
+                    background-color: #ebeff3;
+                }
             }
-        }
-    }
-    .newslatter-checkbox {
-        font-size: 14px;
-        margin-top: 15px;
-
-        input[type="checkbox"] {
-            margin-right: 5px;
+            .checkbox {
+                font-size: 14px;
+                margin-top: 15px;
+            }
         }
     }
 }
@@ -81,6 +72,16 @@
             .newslatter-text {
                 h3 {
                     font-size: 28px;
+                }
+            }
+            .newslatter-form {
+                .form-row {
+                    .form-control {
+
+                    }
+                    .checkbox {
+
+                    }
                 }
             }
         }
